@@ -1,0 +1,148 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.RandomForest -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     all
+Instances:    2164
+Attributes:   32
+              Master
+              SG1A
+              SG1B
+              SG2
+              SG3
+              SG4
+              SG5
+              ESM
+              TSM
+              Predicted Mass (M_Earth)
+              Time Series Observations
+              Spectroscopy Observations
+              Imaging Observations
+              TESS Disposition
+              TFOPWG Disposition
+              TESS Mag
+              Pipeline Signal ID
+              Source
+              Detection
+              Period (days)
+              Duration (hours)
+              Depth (mmag)
+              Depth (ppm)
+              Planet Radius (R_Earth)
+              Planet Insolation (Earth Flux)
+              Planet Equil Temp (K)
+              Planet SNR
+              Stellar Distance (pc)
+              Stellar Eff Temp (K)
+              Stellar log(g) (cm/s^2)
+              Stellar Radius (R_Sun)
+              Stellar Mass (M_Sun)
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1 -do-not-check-capabilities
+
+Time taken to build model: 0.63 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        2152               99.4455 %
+Incorrectly Classified Instances        12                0.5545 %
+Kappa statistic                          0.9888
+Mean absolute error                      0.0733
+Root mean squared error                  0.1182
+Relative absolute error                 14.7439 %
+Root relative squared error             23.7036 %
+Total Number of Instances             2164     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.992    0.003    0.996      0.992    0.994      0.989    1.000     1.000     True
+                 0.997    0.008    0.993      0.997    0.995      0.989    1.000     1.000     False
+Weighted Avg.    0.994    0.006    0.994      0.994    0.994      0.989    1.000     1.000     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+  992    8 |    a = True
+    4 1160 |    b = False
+
+
+
+
+
+
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.RandomForest -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     all-weka.filters.unsupervised.attribute.Remove-R1-7
+Instances:    2164
+Attributes:   25
+              ESM
+              TSM
+              Predicted Mass (M_Earth)
+              Time Series Observations
+              Spectroscopy Observations
+              Imaging Observations
+              TESS Disposition
+              TFOPWG Disposition
+              TESS Mag
+              Pipeline Signal ID
+              Source
+              Detection
+              Period (days)
+              Duration (hours)
+              Depth (mmag)
+              Depth (ppm)
+              Planet Radius (R_Earth)
+              Planet Insolation (Earth Flux)
+              Planet Equil Temp (K)
+              Planet SNR
+              Stellar Distance (pc)
+              Stellar Eff Temp (K)
+              Stellar log(g) (cm/s^2)
+              Stellar Radius (R_Sun)
+              Stellar Mass (M_Sun)
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1 -do-not-check-capabilities
+
+Time taken to build model: 0.17 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        2075               95.8872 %
+Incorrectly Classified Instances        89                4.1128 %
+Kappa statistic                          0.917 
+Mean absolute error                      0.1325
+Root mean squared error                  0.2048
+Relative absolute error                 26.6616 %
+Root relative squared error             41.0732 %
+Total Number of Instances             2164     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.934    0.020    0.976      0.934    0.955      0.918    0.991     0.991     True
+                 0.980    0.066    0.945      0.980    0.962      0.918    0.991     0.990     False
+Weighted Avg.    0.959    0.045    0.959      0.959    0.959      0.918    0.991     0.991     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+  934   66 |    a = True
+   23 1141 |    b = False
+

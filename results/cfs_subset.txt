@@ -1,0 +1,507 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.OneR -B 6
+Relation:     all-cfs_subset
+Instances:    2164
+Attributes:   13
+              Time Series Observations
+              Spectroscopy Observations
+              Imaging Observations
+              Period (days)
+              Depth (mmag)
+              Planet Radius (R_Earth)
+              Planet Insolation (Earth Flux)
+              Planet Equil Temp (K)
+              Planet SNR
+              Stellar Distance (pc)
+              Stellar log(g) (cm/s^2)
+              Stellar Mass (M_Sun)
+              TFOPWG Disposition
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Planet Equil Temp (K):
+	< -1.4285182148538975	-> True
+	< -1.3853756153956802	-> False
+	< -1.3527086829521107	-> True
+	< -1.334716908186932	-> False
+	< -1.3066626372001724	-> True
+	< -1.29553088050463	-> False
+	< -1.1893233102944778	-> True
+	< -1.1775643764798263	-> False
+	< -1.0683088272449037	-> True
+	< -1.0443705654209645	-> False
+	< -0.9436141034867458	-> True
+	< -0.930110025854328	-> False
+	< -0.8636853519899579	-> True
+	< -0.845520565782758	-> False
+	< -0.818517498692851	-> True
+	< -0.8096721477192006	-> False
+	< -0.7794028720424317	-> True
+	< -0.7629014860492209	-> False
+	< -0.7481836725174987	-> True
+	< -0.7374197406248431	-> False
+	< -0.7195499133489669	-> True
+	< -0.7122113759606845	-> False
+	< -0.6919353319252699	-> True
+	< -0.6592094132608064	-> False
+	< -0.6442269930184121	-> True
+	< -0.6305108455826907	-> False
+	< -0.5874929054583328	-> True
+	< -0.5451687009871962	-> False
+	< -0.49687431606627686	-> True
+	< -0.4790368695534172	-> False
+	< -0.4728923136706993	-> True
+	< -0.46490993808503944	-> False
+	< -0.4573383311462754	-> True
+	< -0.4490038966856228	-> False
+	< -0.39550322203261423	-> True
+	< -0.37884935784901597	-> False
+	< -0.36088058639443227	-> True
+	< -0.3514170629775727	-> False
+	< -0.292974347816672	-> True
+	< -0.28522174274430756	-> False
+	< -0.2781782444482793	-> True
+	< -0.27389101225392887	-> False
+	< -0.2693987742869506	-> True
+	< -0.25510938129486266	-> False
+	< -0.24291553525280826	-> True
+	< -0.232280058400395	-> False
+	< -0.22352273004682915	-> True
+	< -0.21425558862035665	-> False
+	< -0.20550824994006256	-> True
+	< -0.1969613157666207	-> False
+	< -0.1875173099293619	-> True
+	< -0.16675488628477086	-> False
+	< -0.1457556486341408	-> True
+	< -0.14030766331472713	-> False
+	< -0.0556253617550546	-> True
+	< -0.048879196605723915	-> False
+	< -0.029984624586118523	-> True
+	< -0.013100191878071724	-> False
+	< -0.0031461889575110685	-> True
+	< 8.893163120260051E-4	-> False
+	< 0.018322563550574923	-> True
+	< 0.030249648277289362	-> False
+	< 0.06147729428909285	-> True
+	< 0.12149184643665482	-> False
+	< 0.1316298684543621	-> True
+	< 0.13848504493017505	-> False
+	< 0.16654997431103627	-> True
+	< 0.18470539548824136	-> False
+	< 0.2151194615413632	-> True
+	< 0.2568642580848637	-> False
+	< 0.2622166234981417	-> True
+	< 0.2795987538979632	-> False
+	< 0.31226226953674663	-> True
+	< 0.3406178990755487	-> False
+	< 0.3607488751689024	-> True
+	>= 0.3607488751689024	-> False
+(1625/2164 instances correct)
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        1440               66.5434 %
+Incorrectly Classified Instances       724               33.4566 %
+Kappa statistic                          0.3294
+Mean absolute error                      0.3346
+Root mean squared error                  0.5784
+Relative absolute error                 67.2992 %
+Root relative squared error            116.0169 %
+Total Number of Instances             2164     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.663    0.332    0.631      0.663    0.647      0.330    0.665     0.574     True
+                 0.668    0.337    0.697      0.668    0.682      0.330    0.665     0.644     False
+Weighted Avg.    0.665    0.335    0.667      0.665    0.666      0.330    0.665     0.612     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 663 337 |   a = True
+ 387 777 |   b = False
+
+
+
+
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.NaiveBayes 
+Relation:     all-cfs_subset
+Instances:    2164
+Attributes:   13
+              Time Series Observations
+              Spectroscopy Observations
+              Imaging Observations
+              Period (days)
+              Depth (mmag)
+              Planet Radius (R_Earth)
+              Planet Insolation (Earth Flux)
+              Planet Equil Temp (K)
+              Planet SNR
+              Stellar Distance (pc)
+              Stellar log(g) (cm/s^2)
+              Stellar Mass (M_Sun)
+              TFOPWG Disposition
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Naive Bayes Classifier
+
+                                   Class
+Attribute                           True   False
+                                  (0.46)  (0.54)
+=================================================
+Time Series Observations
+  mean                             0.3128 -0.1696
+  std. dev.                        1.3587  0.3339
+  weight sum                         1000    1164
+  precision                        0.3507  0.3507
+
+Spectroscopy Observations
+  mean                             0.2122 -0.2725
+  std. dev.                        1.3876  0.4226
+  weight sum                         1000    1164
+  precision                        0.2659  0.2659
+
+Imaging Observations
+  mean                               0.29 -0.2459
+  std. dev.                        1.1924  0.7916
+  weight sum                         1000    1164
+  precision                        0.7435  0.7435
+
+Period (days)
+  mean                            -0.0153  0.0132
+  std. dev.                        0.3134  1.3317
+  weight sum                         1000    1164
+  precision                        0.0165  0.0165
+
+Depth (mmag)
+  mean                              0.032 -0.0274
+  std. dev.                        0.8521  1.1103
+  weight sum                         1000    1164
+  precision                        0.0133  0.0133
+
+Planet Radius (R_Earth)
+  mean                            -0.0946  0.0813
+  std. dev.                        0.4745  1.2846
+  weight sum                         1000    1164
+  precision                        0.0118  0.0118
+
+Planet Insolation (Earth Flux)
+  mean                            -0.2099  0.1806
+  std. dev.                         0.112  1.3329
+  weight sum                         1000    1164
+  precision                        0.0083  0.0083
+
+Planet Equil Temp (K)
+  mean                            -0.4056  0.3485
+  std. dev.                        0.5862  1.1402
+  weight sum                         1000    1164
+  precision                        0.0042  0.0042
+
+Planet SNR
+  mean                              0.145  -0.124
+  std. dev.                         0.852  1.0961
+  weight sum                         1000    1164
+  precision                         0.032   0.032
+
+Stellar Distance (pc)
+  mean                            -0.2133  0.1833
+  std. dev.                        0.4224  1.2776
+  weight sum                         1000    1164
+  precision                        0.0075  0.0075
+
+Stellar log(g) (cm/s^2)
+  mean                             0.2807 -0.2413
+  std. dev.                        0.8659  1.0433
+  weight sum                         1000    1164
+  precision                        0.0132  0.0132
+
+Stellar Mass (M_Sun)
+  mean                            -0.3354  0.2882
+  std. dev.                        0.7621  1.0861
+  weight sum                         1000    1164
+  precision                        0.0099  0.0099
+
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        1359               62.8004 %
+Incorrectly Classified Instances       805               37.1996 %
+Kappa statistic                          0.2829
+Mean absolute error                      0.3606
+Root mean squared error                  0.5646
+Relative absolute error                 72.5434 %
+Root relative squared error            113.2382 %
+Total Number of Instances             2164     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.906    0.611    0.560      0.906    0.692      0.339    0.803     0.791     True
+                 0.389    0.094    0.828      0.389    0.530      0.339    0.802     0.817     False
+Weighted Avg.    0.628    0.333    0.704      0.628    0.605      0.339    0.803     0.805     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 906  94 |   a = True
+ 711 453 |   b = False
+
+
+
+
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.RandomForest -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     all-cfs_subset
+Instances:    2164
+Attributes:   13
+              Time Series Observations
+              Spectroscopy Observations
+              Imaging Observations
+              Period (days)
+              Depth (mmag)
+              Planet Radius (R_Earth)
+              Planet Insolation (Earth Flux)
+              Planet Equil Temp (K)
+              Planet SNR
+              Stellar Distance (pc)
+              Stellar log(g) (cm/s^2)
+              Stellar Mass (M_Sun)
+              TFOPWG Disposition
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1 -do-not-check-capabilities
+
+Time taken to build model: 0.99 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        1902               87.8928 %
+Incorrectly Classified Instances       262               12.1072 %
+Kappa statistic                          0.7566
+Mean absolute error                      0.2172
+Root mean squared error                  0.3053
+Relative absolute error                 43.6878 %
+Root relative squared error             61.2283 %
+Total Number of Instances             2164     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.873    0.116    0.866      0.873    0.870      0.757    0.949     0.936     True
+                 0.884    0.127    0.890      0.884    0.887      0.757    0.949     0.957     False
+Weighted Avg.    0.879    0.122    0.879      0.879    0.879      0.757    0.949     0.948     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+  873  127 |    a = True
+  135 1029 |    b = False
+
+
+
+
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a
+Relation:     all-cfs_subset
+Instances:    2164
+Attributes:   13
+              Time Series Observations
+              Spectroscopy Observations
+              Imaging Observations
+              Period (days)
+              Depth (mmag)
+              Planet Radius (R_Earth)
+              Planet Insolation (Earth Flux)
+              Planet Equil Temp (K)
+              Planet SNR
+              Stellar Distance (pc)
+              Stellar log(g) (cm/s^2)
+              Stellar Mass (M_Sun)
+              TFOPWG Disposition
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    1.604839601758035
+    Node 2    -2.8544482826089355
+    Node 3    7.864004676607497
+    Node 4    -2.8350117119168523
+    Node 5    -1.5579230454578166
+    Node 6    0.3247837502758602
+    Node 7    -4.335370514837359
+    Node 8    -3.214184055830277
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -1.604751436306179
+    Node 2    2.8545912202514616
+    Node 3    -7.864018484984458
+    Node 4    2.834992394104043
+    Node 5    1.5578744150232484
+    Node 6    -0.3318025282250938
+    Node 7    4.335386359297324
+    Node 8    3.2141469769881246
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    0.889773970204253
+    Attrib Time Series Observations    4.956611086422776
+    Attrib Spectroscopy Observations    -5.989331391736889
+    Attrib Imaging Observations    9.885294390818554
+    Attrib Period (days)    -4.30562317803825
+    Attrib Depth (mmag)    1.267494049990917
+    Attrib Planet Radius (R_Earth)    8.580946818609737
+    Attrib Planet Insolation (Earth Flux)    -0.022806609964941233
+    Attrib Planet Equil Temp (K)    1.1444977473328393
+    Attrib Planet SNR    -13.019505190450761
+    Attrib Stellar Distance (pc)    3.796047738494475
+    Attrib Stellar log(g) (cm/s^2)    -12.618547782651563
+    Attrib Stellar Mass (M_Sun)    3.894323126112963
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    8.12642221331681
+    Attrib Time Series Observations    53.666062897860364
+    Attrib Spectroscopy Observations    39.61324828540864
+    Attrib Imaging Observations    3.3874274317580357
+    Attrib Period (days)    -8.417568313986958
+    Attrib Depth (mmag)    -11.01468240885691
+    Attrib Planet Radius (R_Earth)    -19.847483253172268
+    Attrib Planet Insolation (Earth Flux)    -14.529532310793991
+    Attrib Planet Equil Temp (K)    -7.320517491190414
+    Attrib Planet SNR    -2.822276979881917
+    Attrib Stellar Distance (pc)    -15.269929938026356
+    Attrib Stellar log(g) (cm/s^2)    1.2980074815163996
+    Attrib Stellar Mass (M_Sun)    -4.402891462715501
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -4.211210104129452
+    Attrib Time Series Observations    19.20786821479118
+    Attrib Spectroscopy Observations    -1.761348426895067
+    Attrib Imaging Observations    -21.28082971714993
+    Attrib Period (days)    7.785640297298667
+    Attrib Depth (mmag)    2.4726909904748267
+    Attrib Planet Radius (R_Earth)    23.760294199813973
+    Attrib Planet Insolation (Earth Flux)    6.235743775436082
+    Attrib Planet Equil Temp (K)    -36.78496653050857
+    Attrib Planet SNR    -17.649058373330586
+    Attrib Stellar Distance (pc)    -3.680699467400978
+    Attrib Stellar log(g) (cm/s^2)    -11.114437610700028
+    Attrib Stellar Mass (M_Sun)    15.651403273209553
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    0.08524373715520374
+    Attrib Time Series Observations    0.25907643248671275
+    Attrib Spectroscopy Observations    2.017108666534894
+    Attrib Imaging Observations    -3.5429850693316
+    Attrib Period (days)    -0.23722173848538156
+    Attrib Depth (mmag)    -0.5530528599259671
+    Attrib Planet Radius (R_Earth)    9.969748814412519
+    Attrib Planet Insolation (Earth Flux)    2.1072918407279357
+    Attrib Planet Equil Temp (K)    -2.027607658501523
+    Attrib Planet SNR    -6.324449161306531
+    Attrib Stellar Distance (pc)    -0.7102076642453474
+    Attrib Stellar log(g) (cm/s^2)    -2.1231569615251398
+    Attrib Stellar Mass (M_Sun)    1.3853289580624157
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -0.5946440909072115
+    Attrib Time Series Observations    -0.19829732162232433
+    Attrib Spectroscopy Observations    0.2781220761581186
+    Attrib Imaging Observations    1.2622822524495507
+    Attrib Period (days)    0.4305698409680815
+    Attrib Depth (mmag)    0.15673074845841806
+    Attrib Planet Radius (R_Earth)    -0.05697227889043068
+    Attrib Planet Insolation (Earth Flux)    0.29044410187538766
+    Attrib Planet Equil Temp (K)    1.111956722754918
+    Attrib Planet SNR    0.545577217687489
+    Attrib Stellar Distance (pc)    0.5631705968370748
+    Attrib Stellar log(g) (cm/s^2)    0.3694734735313582
+    Attrib Stellar Mass (M_Sun)    0.3432336282913148
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    -19.67924063119324
+    Attrib Time Series Observations    37.42290652860728
+    Attrib Spectroscopy Observations    -2.3436491280916187
+    Attrib Imaging Observations    -4.745449746036401
+    Attrib Period (days)    18.34770373199382
+    Attrib Depth (mmag)    -23.912078854369856
+    Attrib Planet Radius (R_Earth)    -37.84580962696878
+    Attrib Planet Insolation (Earth Flux)    25.327697736443547
+    Attrib Planet Equil Temp (K)    17.91484764285582
+    Attrib Planet SNR    -44.635609094999076
+    Attrib Stellar Distance (pc)    1.5504177911473203
+    Attrib Stellar log(g) (cm/s^2)    6.905536491291061
+    Attrib Stellar Mass (M_Sun)    -1.2670828714767324
+Sigmoid Node 8
+    Inputs    Weights
+    Threshold    -6.266507213406301
+    Attrib Time Series Observations    -5.292117716943028
+    Attrib Spectroscopy Observations    -4.607512143871419
+    Attrib Imaging Observations    -9.160862141839985
+    Attrib Period (days)    8.169766464920682
+    Attrib Depth (mmag)    4.203259498638552
+    Attrib Planet Radius (R_Earth)    6.169295408519984
+    Attrib Planet Insolation (Earth Flux)    9.224556701702086
+    Attrib Planet Equil Temp (K)    -1.530577682195781
+    Attrib Planet SNR    -7.142349463885686
+    Attrib Stellar Distance (pc)    12.463840760039485
+    Attrib Stellar log(g) (cm/s^2)    17.000957832900696
+    Attrib Stellar Mass (M_Sun)    -12.195079832032395
+Class True
+    Input
+    Node 0
+Class False
+    Input
+    Node 1
+
+
+Time taken to build model: 1.04 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        1747               80.7301 %
+Incorrectly Classified Instances       417               19.2699 %
+Kappa statistic                          0.6133
+Mean absolute error                      0.2506
+Root mean squared error                  0.3729
+Relative absolute error                 50.4079 %
+Root relative squared error             74.7937 %
+Total Number of Instances             2164     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.808    0.193    0.782      0.808    0.795      0.614    0.884     0.850     True
+                 0.807    0.192    0.830      0.807    0.818      0.614    0.884     0.906     False
+Weighted Avg.    0.807    0.193    0.808      0.807    0.807      0.614    0.884     0.880     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 808 192 |   a = True
+ 225 939 |   b = False
